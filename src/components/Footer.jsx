@@ -10,95 +10,104 @@ function Footer(prps) {
       <div className="footer__inner container">
         <div className="footer__menu">
           <div>
-            <h3>사이트</h3>
+            <h3>Traffic</h3>
             <ul>
               <li>
-                <a href="/">웹표준 사이트</a>
+                <a href="/">Subway</a>
               </li>
               <li>
-                <a href="/">반응형 사이트</a>
+                <a href="/">Tourist Bus</a>
               </li>
               <li>
-                <a href="/">패럴랙스 사이트</a>
+                <a href="/">Seoul Taxi</a>
               </li>
               <li>
-                <a href="/">포트폴리오 사이트</a>
+                <a href="/">Seoul Bicycle</a>
               </li>
             </ul>
           </div>
           <div>
-            <h3>헤더 유형</h3>
+            <h3>A Theme Park</h3>
             <ul>
               <li>
-                <a href="/">헤더 유형01</a>
+                <a href="/">Everland</a>
               </li>
               <li>
-                <a href="/">헤더 유형02</a>
+                <a href="/">Lotte World</a>
               </li>
             </ul>
           </div>
           <div>
-            <h3>슬라이드 유형</h3>
+            <h3>Museum</h3>
             <ul>
               <li>
-                <a href="/">슬라이드 유형01</a>
+                <a href="/">Seoul Museum of History</a>
               </li>
               <li>
-                <a href="/">슬라이드 유형01</a>
+                <a href="/">National Museum</a>
+              </li>
+              <li>
+                <a href="/">Museum of Life History</a>
+              </li>
+              <li>
+                <a href="/">Craft Museum</a>
               </li>
             </ul>
           </div>
           <div>
-            <h3>이미지 유형</h3>
+            <h3>Tourist Attraction</h3>
             <ul>
               <li>
-                <a href="/">이미지 유형01</a>
+                <a href="/">Gyeongbokgung</a>
               </li>
               <li>
-                <a href="/">이미지 유형02</a>
+                <a href="/">DDP Plaza</a>
               </li>
               <li>
-                <a href="/">이미지/텍스트 유형01</a>
+                <a href="/">Cheonggyecheon</a>
               </li>
               <li>
-                <a href="/">이미지/텍스트 유형01</a>
+                <a href="/">The Namsan Tower</a>
               </li>
               <li>
-                <a href="/">텍스트 유형01</a>
+                <a href="/">Han River</a>
               </li>
             </ul>
           </div>
           <div>
-            <h3>카드 유형</h3>
+            <h3>Medical Tourism</h3>
             <ul>
               <li>
-                <a href="/">카드 유형01</a>
+                <a href="/">Dermatology</a>
               </li>
               <li>
-                <a href="/">카드 유형02</a>
+                <a href="/">Health care</a>
               </li>
               <li>
-                <a href="/">카드 유형03</a>
+                <a href="/">Advanced Medical Services</a>
               </li>
             </ul>
           </div>
           <div>
-            <h3>푸터 유형</h3>
+            <h3>Language Services</h3>
             <ul>
               <li>
-                <a href="/">푸터 메뉴 유형01</a>
+                <a href="/">English</a>
               </li>
               <li>
-                <a href="/">푸터 컨택트 유형02</a>
+                <a href="/">Chinese</a>
               </li>
               <li>
-                <a href="/">푸터 이메일 유형03</a>
+                <a href="/">Japanese</a>
+              </li>
+              <li>
+                <a href="/">Other Languages</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="footer__right">
-          2022 Webstoryboy. Portfolio is Power
+          2022 David Yang. Portfolio
           <br />
           All rights reserved.
         </div>

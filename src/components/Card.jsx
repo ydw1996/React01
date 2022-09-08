@@ -6,26 +6,23 @@ function Card(prps) {
       id="cardType"
       className={`card__wrap ${prps.fonts[0]} ${prps.fonts[1]} `}
     >
-      <h2>웹스토리보이 강의</h2>
-      <p>
-        웹디자이너, 웹 퍼블리셔, 프론트앤드 개발자를 위한 강의 사이트입니다.
-        <br />
-        NEXON Lv1 Gothic Light 22px 150% #666
-      </p>
+      <h2>A City Of Culture</h2>
+      <p>Feel the charm of Seoul with its diverse culture, food, and nature</p>
       <div className="card__inner container">
         <article className="card">
           <figure className="card__header">
             <img src="assets/img/card_bg01.jpg" alt="웹표준 사이트 만들기" />
           </figure>
           <div className="card__body">
-            <h3 className="tit">웹표준 사이트 만들기</h3>
+            <h3 className="tit">K-pop</h3>
             <p className="desc">
-              사이트를 만들기 위한 기초 강의입니다. 기본 코딩에 대한 감각을
-              익히고, 웹 표준을 준수하면서 코딩하는 방법을 익힙니다. 다양한
-              예제를 통해 사이트를 만드는
+              Bangtan Boys, is a South Korean boy band formed in 2010 and
+              debuting in 2013 under Big Hit Entertainment. The
+              septet—consisting of members Jin, Suga, J-Hope, RM, Jimin, V, and
+              Jungkook—co-writes and co-produces much of their own material.
             </p>
             <a className="btn" href="/">
-              더 자세히 보기
+              View More
               <span aria-hidden="true">
                 <svg
                   width="52"
@@ -48,14 +45,16 @@ function Card(prps) {
             <img src="assets/img/card_bg02.jpg" alt="반응형 사이트 만들기" />
           </figure>
           <div className="card__body">
-            <h3 className="tit">반응형 사이트 만들기</h3>
+            <h3 className="tit">Korean Food</h3>
             <p className="desc">
-              웹표준 사이트를 완성하고, 반응형을 익히는 사이트입니다. 기본
-              코딩을 익히고, 반응형 감각을 키우면 모바일 및 반응형 사이트도 만들
-              수 있습니다. 웹표준 사이트를........
+              K-food refers to the Korean food which has been made by the Korean
+              recipe and favored by foreign celebrities and common people. In
+              February 2020, a very exotic food Jjapaguri was made publicized
+              and getting popular around the world when Bong Joon-ho's cinema
+              "Parasite" won four Academy Awards.
             </p>
             <a className="btn" href="/">
-              더 자세히 보기
+              View More
               <span aria-hidden="true">
                 <svg
                   width="52"
@@ -78,19 +77,21 @@ function Card(prps) {
             <img src="assets/img/card_bg03.jpg" alt="패랠렉스 사이트 만들기" />
           </figure>
           <div className="card__body">
-            <h3 className="tit">패랠렉스 사이트 만들기</h3>
+            <h3 className="tit">Natur</h3>
             <p className="desc">
-              기업 사이트 중 50% 이상이 패랙렉스 스크로링 효과로 만들어져
-              있습니다. 웹 표준, 반응형 사이트를 완성하였다면, 이제는
-              인터랙티브한 패랠렉스 스크롤링 사이트를.....
+              Bukhansan National Park has numerous ridges and valleys, so it is
+              always new even if you go up and down throughout the year. A
+              variety of hiking courses are waiting for hikers, ranging from
+              small trails to quiet hiking trails where Silgaecheon Stream
+              flows, and rugged rocky courses.
             </p>
             <a className="btn" href="/">
-              더 자세히 보기
+              View More
               <span aria-hidden="true">
                 <svg
                   width="52"
                   height="8"
-                  viewBox="0 0 52 8"
+                  ViewBox="0 0 52 8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >

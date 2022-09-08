@@ -8,17 +8,17 @@ function Slider(prps) {
         <div className="slider">
           <div className="slider__img">
             <div className="desc">
-              <span>developer</span>
-              <h3>new frontend</h3>
+              <span>Korea</span>
+              <h3>SEOUL</h3>
               <p>
-                너무 무리하지 말아요! 이미 당신은 잘하고 있고!
+                Welcome to Seoul, the capital of Korean culture
                 <br />
-                앞으로도 잘 할 수 있어요!
+                안녕하세요
               </p>
               <div className="btn">
-                <a href="/">자세히 보기</a>
+                <a href="/">LEARN MORE</a>
                 <a href="/" className="black">
-                  사이트 보기
+                  VIEW SITE
                 </a>
               </div>
             </div>
