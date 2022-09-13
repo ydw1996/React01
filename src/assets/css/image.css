@@ -43,3 +43,48 @@
 .image__btn.yellow {
   background-color: #b56b40;
 }
+
+@media all and (max-width: 1200px) {
+  .section > h2 {
+    font-size: 42px;
+    padding: 20px;
+  }
+  .section > p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+  .container {
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .image__desc {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .image__inner {
+    flex-direction: column;
+  }
+  .image {
+    width: 100%;
+  }
+  .image.img1 {
+    margin-bottom: 20px;
+    height: 300px;
+    padding-top: 140px;
+  }
+
+  .image.img2 {
+    height: 300px;
+    padding-top: 140px;
+  }
+
+  @media all and (max-width: 540px) {
+    .section > h2 {
+      font-size: 34px;
+    }
+  }
+}

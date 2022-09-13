@@ -35,13 +35,19 @@ function Footer(prps) {
               <li>
                 <a href="/">Lotte World</a>
               </li>
+              <li>
+                <a href="/">Seoul Grand Park</a>
+              </li>
+              <li>
+                <a href="/">Lotte World</a>
+              </li>
             </ul>
           </div>
           <div>
             <h3>Museum</h3>
             <ul>
               <li>
-                <a href="/">Seoul Museum of History</a>
+                <a href="/">A Museum Of History</a>
               </li>
               <li>
                 <a href="/">National Museum</a>
@@ -50,7 +56,7 @@ function Footer(prps) {
                 <a href="/">Museum of Life History</a>
               </li>
               <li>
-                <a href="/">Craft Museum</a>
+                <a href="/">Seoul Arboretum</a>
               </li>
             </ul>
           </div>
@@ -69,9 +75,6 @@ function Footer(prps) {
               <li>
                 <a href="/">The Namsan Tower</a>
               </li>
-              <li>
-                <a href="/">Han River</a>
-              </li>
             </ul>
           </div>
           <div>
@@ -89,7 +92,7 @@ function Footer(prps) {
             </ul>
           </div>
           <div>
-            <h3>Language Services</h3>
+            <h3>Language</h3>
             <ul>
               <li>
                 <a href="/">English</a>

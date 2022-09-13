@@ -70,3 +70,24 @@
   text-underline-position: under;
   color: #666;
 }
+
+@media all and (max-width: 700px) {
+  .text {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  h2.mb70 {
+    margin-bottom: 50px;
+  }
+  .text__title {
+    font-size: 20px;
+  }
+  .text__desc {
+    font-size: 16px;
+  }
+  .text__btn {
+    font-size: 14px;
+  }
+}

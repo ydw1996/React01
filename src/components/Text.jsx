@@ -6,7 +6,7 @@ function Text(prps) {
       id="textType"
       className={`text__wrap ${prps.fonts[0]} ${prps.fonts[1]}`}
     >
-      <h2 className="mb70">Another attraction of Seoul</h2>
+      <h2 className="mb50">Another attraction of Seoul</h2>
       <div className="text__inner container">
         <div className="text t1">
           <h3 className="text__title">Museum</h3>

@@ -1,76 +1,178 @@
 .imgText__inner {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .imgText__inner > div {
-    width: 32%;
-    height: 500px;
+  height: 500px;
+}
+.imgText__txt {
+  width: 32%;
 }
 .imgText__txt .small {
-    font-size: 16px;
-    color: #666;
-    text-decoration: underline;
-    margin-bottom: 20px;
-    display: block;
-    text-align: left;
+  font-size: 16px;
+  color: #666;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  display: block;
+  text-align: left;
 }
 .imgText__txt .title {
-    font-size: 50px;
-    font-weight: 300;
-    word-break: keep-all;
-    line-height: 1.4;
-    margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 300;
+  word-break: keep-all;
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
 .imgText__txt .desc {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.5;
-    color: #666;
-    margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 10px;
 }
 .imgText__txt .list {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.6;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
 }
 .imgText__txt .list li {
-    position: relative;
-    padding-left: 20px;
+  position: relative;
+  padding-left: 20px;
 }
 .imgText__txt .list li::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    background: #666;
-    border-radius: 50%;
-    position: absolute;
-    left: 5px;
-    top: 9px;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #666;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 9px;
 }
 .imgText__txt .list li a {
-    color: #666;
+  color: #666;
 }
 .imgText__img {
-    border-radius: 10px;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 20px;
 }
 .imgText__img a {
-    background-color: #7C2B39;
-    color: #fff;
-    padding: 10px 30px;
-    font-size: 18px;
-    border-radius: 30px;
-    display: inline-block;
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
+  background-color: #7c2b39;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  display: inline-block;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
 }
 .imgText__img a.blue {
-    background-color: #2B387C;
+  background-color: #2b387c;
 }
 .imgText__img.img1 {
-    background: url(../img/imgText_bg01.jpg) no-repeat center / cover;
+  background: url(../img/imgText_bg01.jpg) no-repeat center / cover;
 }
 .imgText__img.img2 {
-    background: url(../img/imgText_bg02.jpg) no-repeat center / cover;
+  background: url(../img/imgText_bg02.jpg) no-repeat center / cover;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+  .imgText__txt .title {
+    font-size: 40px;
+  }
+
+  .imgText__txt .desc {
+    font-size: 16px;
+  }
+
+  .imgText__txt .list {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  .imgText__txt .list li {
+    margin-top: 5px;
+    padding-left: 0px;
+  }
+  .imgText__txt .list li::before {
+    width: 0;
+  }
+}
+
+@media all and (max-width: 960px) {
+  #imgTextType {
+    padding: 50px 0;
+  }
+  .imgText__inner.container {
+    flex-direction: column;
+  }
+  .imgText__inner .imgText__txt {
+    height: 340px;
+  }
+  .imgText__txt {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imgText__img {
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .imgText__img.img1 {
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .imgText__inner .imgText__txt {
+    height: 300px;
+  }
+
+  .imgText__txt .desc {
+    font-size: 12px;
+  }
+
+  .imgText__txt .list li a {
+    font-size: 10px;
+  }
+
+  .imgText__txt .list li {
+    display: block;
+  }
+
+  .imgText__inner .imgText__img {
+    height: 400px;
+  }
+
+  .imgText__img {
+    width: 100%;
+  }
+
+  .imgText__img.img1 {
+    height: 100%;
+  }
+  .imgText__img.img2 {
+    height: 100%;
+  }
+
+  .imgText__img a {
+    padding: 5px 20px;
+    font-size: 14px;
+    left: 15px;
+    bottom: 20px;
+  }
+  .imgText__txt .title {
+    font-size: 34px;
+  }
 }

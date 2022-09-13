@@ -40,13 +40,15 @@ function ImgText(prps) {
             </li>
           </ul>
         </div>
-        <div className="imgText__img img1">
-          <a href="/">Hanbok</a>
-        </div>
-        <div className="imgText__img img2">
-          <a href="/" className="blue">
-            K-Fashion
-          </a>
+        <div className="imgText__img">
+          <div className="imgText__img img1">
+            <a href="/">Hanbok</a>
+          </div>
+          <div className="imgText__img img2">
+            <a href="/" className="blue">
+              K-Fashion
+            </a>
+          </div>
         </div>
       </div>
     </section>
