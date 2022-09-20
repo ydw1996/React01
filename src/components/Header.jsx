@@ -2,6 +2,29 @@ import React from "react";
 import $ from "jquery";
 import { Component } from "react";
 
+function HeaderInfo({ menu }) {
+  return (
+    <li>
+      <a href="/">{menu}</a>
+    </li>
+  );
+}
+
+const headerIcon = {
+  title: ["Seoul", "site"],
+};
+
+const headerMenu = [
+  { menu: "CULTURE" },
+  { menu: "MODERN/TRADITION" },
+  { menu: "FASHION" },
+  { menu: "FOOD" },
+  { menu: "ABOUT" },
+];
+
+const headerMember = {
+  btn: ["LOGIN"],
+};
 function Header(prps) {
   function mobileMenu() {
     $(".mobile_menu").slideToggle();
@@ -12,51 +35,28 @@ function Header(prps) {
       <div className="header__inner">
         <div className="header__logo">
           <a href="/">
-            SEOUL <em>site</em>
+            {headerIcon.title[0]}
+            <em> {headerIcon.title[1]}</em>
           </a>
         </div>
         <nav className="header__menu">
           <ul>
-            <li>
-              <a href="/">CULTURE</a>
-            </li>
-            <li>
-              <a href="/">MODERN/TRADITION</a>
-            </li>
-            <li>
-              <a href="/">FASHION</a>
-            </li>
-            <li>
-              <a href="/">FOOD</a>
-            </li>
-            <li>
-              <a href="/">ABOUT</a>
-            </li>
+            {headerMenu.map((txt) => (
+              <HeaderInfo menu={txt.menu} key={txt.menu} />
+            ))}
           </ul>
         </nav>
         <div className="header__member">
-          <a href="/">LOGIN</a>
+          <a href="/">{headerMember.btn[0]}</a>
           <button className="mbtn" onClick={mobileMenu}></button>
         </div>
 
         <div className="mobile_menu">
           <button className="cbtn" onClick={mobileMenu}></button>
           <div class="sub">
-            <li>
-              <a href="/">CULTURE</a>
-            </li>
-            <li>
-              <a href="/">MODERN/TRADITION</a>
-            </li>
-            <li>
-              <a href="/">FASHION</a>
-            </li>
-            <li>
-              <a href="/">FOOD</a>
-            </li>
-            <li>
-              <a href="/">ABOUT</a>
-            </li>
+            {headerMenu.map((txt) => (
+              <HeaderInfo menu={txt.menu} key={txt.menu} />
+            ))}
           </div>
         </div>
       </div>

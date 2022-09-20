@@ -1,118 +1,98 @@
 import React from "react";
 
+function FooterInfo(footer) {
+  return (
+    <div>
+      <h3>{footer.title}</h3>
+      <ul>
+        <li>
+          <a href="/">{footer.desc}</a>
+        </li>
+        <li>
+          <a href="/">{footer.desc2}</a>
+        </li>
+        <li>
+          <a href="/">{footer.desc3}</a>
+        </li>
+        <li>
+          <a href="/">{footer.desc4}</a>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+const footer_menu = [
+  {
+    title: "Traffic",
+    desc: "Subway",
+    desc2: "Tourist Bus",
+    desc3: "Seoul Taxi",
+    desc4: "Seoul Bicycle",
+  },
+  {
+    title: "A Theme Park",
+    desc: "Everland",
+    desc2: "Lotte World",
+    desc3: "Seoul Grand Park",
+    desc4: "Seoul World",
+  },
+  {
+    title: "Museum",
+    desc: "A Museum Of History",
+    desc2: "National Museum",
+    desc3: "Museum of Life History",
+    desc4: "Seoul Arboretum",
+  },
+  {
+    title: "Tourist Attraction",
+    desc: "Gyeongbokgung",
+    desc2: "DDP Plaza",
+    desc3: "Cheonggyecheon",
+    desc4: "The Namsan Tower",
+  },
+  {
+    title: "Medical Tourism",
+    desc: "Dermatology",
+    desc2: "Health care",
+    desc3: "Advanced Medical Services",
+  },
+  {
+    title: "Language",
+    desc: "English",
+    desc2: "Chinese",
+    desc3: "Japanese",
+    desc4: "Other Languages",
+  },
+];
+
+const footer = {
+  port: ["2022 David Yang. Portfolio", "All rights reserved."],
+};
+
 function Footer(prps) {
   return (
     <footer
       id="footerType"
       className={`footer__wrap ${prps.fonts[0]} ${prps.fonts[1]} ${prps.fonts[2]}`}
     >
-      <h2 className="blind">푸터 영역</h2>
       <div className="footer__inner container">
         <div className="footer__menu">
-          <div>
-            <h3>Traffic</h3>
-            <ul>
-              <li>
-                <a href="/">Subway</a>
-              </li>
-              <li>
-                <a href="/">Tourist Bus</a>
-              </li>
-              <li>
-                <a href="/">Seoul Taxi</a>
-              </li>
-              <li>
-                <a href="/">Seoul Bicycle</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>A Theme Park</h3>
-            <ul>
-              <li>
-                <a href="/">Everland</a>
-              </li>
-              <li>
-                <a href="/">Lotte World</a>
-              </li>
-              <li>
-                <a href="/">Seoul Grand Park</a>
-              </li>
-              <li>
-                <a href="/">Lotte World</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Museum</h3>
-            <ul>
-              <li>
-                <a href="/">A Museum Of History</a>
-              </li>
-              <li>
-                <a href="/">National Museum</a>
-              </li>
-              <li>
-                <a href="/">Museum of Life History</a>
-              </li>
-              <li>
-                <a href="/">Seoul Arboretum</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Tourist Attraction</h3>
-            <ul>
-              <li>
-                <a href="/">Gyeongbokgung</a>
-              </li>
-              <li>
-                <a href="/">DDP Plaza</a>
-              </li>
-              <li>
-                <a href="/">Cheonggyecheon</a>
-              </li>
-              <li>
-                <a href="/">The Namsan Tower</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Medical Tourism</h3>
-            <ul>
-              <li>
-                <a href="/">Dermatology</a>
-              </li>
-              <li>
-                <a href="/">Health care</a>
-              </li>
-              <li>
-                <a href="/">Advanced Medical Services</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Language</h3>
-            <ul>
-              <li>
-                <a href="/">English</a>
-              </li>
-              <li>
-                <a href="/">Chinese</a>
-              </li>
-              <li>
-                <a href="/">Japanese</a>
-              </li>
-              <li>
-                <a href="/">Other Languages</a>
-              </li>
-            </ul>
-          </div>
+          {footer_menu.map((txt) => (
+            <FooterInfo
+              title={txt.title}
+              desc={txt.desc}
+              desc2={txt.desc2}
+              desc3={txt.desc3}
+              desc4={txt.desc4}
+              key={txt.footer}
+            />
+          ))}
         </div>
         <div className="footer__right">
-          2022 David Yang. Portfolio
+          {footer.port[0]}
           <br />
-          All rights reserved.
+          {footer.port[1]}
         </div>
       </div>
     </footer>
