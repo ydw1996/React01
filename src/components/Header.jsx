@@ -23,7 +23,7 @@ const headerMenu = [
 ];
 
 const headerMember = {
-  btn: ["LOGIN"],
+  btn: ["Github"],
 };
 function Header(prps) {
   function mobileMenu() {
@@ -47,7 +47,7 @@ function Header(prps) {
           </ul>
         </nav>
         <div className="header__member">
-          <a href="/">{headerMember.btn[0]}</a>
+          <a href="https://github.com/ydw1996/dw">{headerMember.btn[0]}</a>
           <button className="mbtn" onClick={mobileMenu}></button>
         </div>
 
